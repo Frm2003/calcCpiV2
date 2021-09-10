@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src=".js"></script>
+    <title>Calculadora Cpi</title>
+</head>
+
+<body onload="load()">
+    <header>
+        <label for="cb">
+            <div class="iconeFechar">
+                <i class="fas fa-bars"></i>
+                <input type="checkbox" id="cb">
+            </div>
+        </label>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html" class="top">
+                <i class="fas fa-calculator"></i>
+                <li>Calculos</li>
+            </a>
+            <a href="#" class="bottom">
+                <i class="fas fa-phone-square"></i>
+                <li>Contatos</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="result">
+        <div class="alingRes">
+            <div class="titulo">
+                <h2>Calculo</h2>
+                <i class="far fa-times-circle" id="bt"></i>
+            </div>
+            <input type="number" class="cont" placeholder="Num. de intruções">
+            <div class="titulo">
+                <p>%</p>
+                <p>Cpi</p>
+            </div>
+            <div class="inputs">
+                <div class="ia"></div>
+                <div class="ib"></div>
+            </div>
+            <div class="bts">
+                <button id="bt">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div class="site">
+        <section class="sec1">
+            <div class="navigation">
+                <label for="r1" class="bar">Calc. CPI</label>
+                <label for="r2" class="bar">Calc. Tempo</label>
+                <label for="r3" class="bar">Calc. Gen.</label>
+            </div>
+            <div class="slides">
+                <input type="radio" name="r" id="r1">
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <div class="content s1">
+                    <div class="calculo c1">
+                        <div class="aling">
+                            <h2>calculadora CPI</h2>
+                            <img src="img/cal.png">
+                            <div>
+                                <p>insira a quantidade de inputs</p>
+                                <input type="number" class="cont">
+                                <p>Resultado</p>
+                                <input type="number" id="exibir" disabled>
+                            </div>
+                            <div class="bts">
+                                <button class="bt1" id="bt">Enviar</button>
+                                <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="calculo">
+                        <div class="aling">
+                            <h2>calculadora Tempo</h2>
+                            <div>
+                                <div>
+                                    <p>CPI:</p>
+                                    <input type="number" id="exibir">
+                                    <p>iC:</p>
+                                    <input type="number">
+                                    <p>Clock(ghz):</p>
+                                    <input type="number">
+                                    <p>Resultado</p>
+                                    <input type="number" id="exibir" disabled>
+                                </div>
+                                <div class="bts">
+                                    <button class="bt1" id="bt">Enviar</button>
+                                    <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

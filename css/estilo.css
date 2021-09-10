@@ -1,0 +1,80 @@
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	border-spacing: 0;
+    font-family: 'Share Tech', sans-serif;
+	outline: none;
+}
+body{
+    background: rgba(33,32,32,1);
+    color: rgba(255,255,255,0.5);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*NAV*/
+nav{
+    width: 100%;
+    height: 100%;
+    margin-left: -100%;
+    background: rgba(41,37,37,1);
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 99;
+}
+nav ul{
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid;
+    list-style-type: none;
+    position: absolute;
+    top: 65px;
+}
+nav ul a{
+    padding: 0.5em;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+nav ul a i{
+    width: 20%;
+    padding: 0em 0.5em 0em 0.5em;
+    text-align: center;
+}
+nav ul a li{
+    width: 80%;
+}
+nav ul a:hover{
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    border-bottom: 1px solid rgba(196,31,20,0.5);
+    background: rgba(41,37,37,1);
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 100;
+}
+header .img{
+    width: 100%;
+    padding-left: 0.5em;
+}
+header .img img{
+    width: 20%;
+}
+header .iconeFechar i{
+    padding: 0.5em;
+    font-size: 30px;
+}
