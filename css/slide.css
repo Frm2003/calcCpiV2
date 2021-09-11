@@ -1,4 +1,4 @@
-/*tags gerais*/
+/*tags genericas*/
 .site{
     width: 100%;
     position: absolute;
@@ -18,10 +18,27 @@ input{
 	background: none;
 	color: rgba(255,255,255,0.5);
 }
-/*slides*/
-.sec1{
-    width: 100%;
-    overflow-x: hidden;
+.versao{
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+}
+.versao i{
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0;
+    transition: all 1s;
+}
+/*navegação*/
+.navigationAling{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation{
     display: flex;
@@ -35,16 +52,20 @@ input{
     font-size: 18px;
     font-weight: bold;
 }
+/*slides*/
+.sec1{
+    width: 100%;
+    overflow-x: hidden;
+}
 .slides{
     width: 500%;
-    height: 100%;
     display: flex;
 }
 .content{
     width: 20%;
     height: 100%;
     padding: 0.5em;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #r1:checked ~ .s1{
     margin-left: 0;
@@ -52,8 +73,17 @@ input{
 #r2:checked ~ .s1{
     margin-left: -20%;
 }
-#r3:checked ~ .s1{
-    margin-left: -40%;
+/*conteudo slides*/
+.calculo{
+	width: 80%;
+	margin: auto;
+	padding: 0.5em;
+	border: 1px solid rgba(196,31,20,0.5);
+	border-radius: 5px;
+	text-align: center;
+}
+.calculo img{
+    width: 50%;
 }
 /*aba de calculo*/
 .result{
@@ -70,8 +100,8 @@ input{
     z-index: 101; 
 }
 .result .alingRes{
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     padding: 0.5em;
     border: 1px solid rgba(196,31,20,0.5);
     border-radius: 5px;
@@ -92,20 +122,6 @@ input{
 }
 .result .alingRes .inputs .ia{
     margin-right: 0.5em;
-}
-/*conteudo slides*/
-.calculo{
-	width: 80%;
-    height: 369.16px;
-	margin: auto;
-	padding: 0.5em;
-	border: 1px solid rgba(196,31,20,0.5);
-	border-radius: 5px;
-	text-align: center;
-	transition: all 0.5s;
-}
-.calculo .aling img{
-    width: 50%;
 }
 /*para os botões*/
 .bts{
@@ -130,4 +146,32 @@ input{
 .bts .bt2{
 	width: 15%;
 	background-color: rgba(20,96,196,1);
+}
+@media screen and (min-width: 760px){
+    .site{
+        top: 75px;
+    }
+    .navigation{
+        width: 50%;
+    }
+    .content{
+        height: 884px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .calculo{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1500px){
+    .navigation{
+        width: 20%;
+    }
+    .content{
+        height: 800px;  
+    }
+    .calculo{
+        width: 20%;
+    }
 }

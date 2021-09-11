@@ -27,7 +27,7 @@
     </header>
     <nav>
         <ul>
-            <a href="index.html" class="top">
+            <a href="#" class="top">
                 <i class="fas fa-calculator"></i>
                 <li>Calculos</li>
             </a>
@@ -58,24 +58,43 @@
         </div>
     </div>
     <div class="site">
-        <section class="sec1">
+        <div class="navigationAling">
             <div class="navigation">
                 <label for="r1" class="bar">Calc. CPI</label>
                 <label for="r2" class="bar">Calc. Tempo</label>
-                <label for="r3" class="bar">Calc. Gen.</label>
             </div>
+        </div>
+        <section class="sec1">
             <div class="slides">
                 <input type="radio" name="r" id="r1">
                 <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
                 <div class="content s1">
                     <div class="calculo c1">
-                        <div class="aling">
-                            <h2>calculadora CPI</h2>
-                            <img src="img/cal.png">
+                        <h2>calculadora CPI</h2>
+                        <img src="img/cal.png">
+                        <div>
+                            <p>insira a quantidade de inputs</p>
+                            <input type="number" class="cont">
+                            <p>Resultado</p>
+                            <input type="number" id="exibir" disabled>
+                        </div>
+                        <div class="bts">
+                            <button class="bt1" id="bt">Enviar</button>
+                            <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="calculo">
+                        <h2>calculadora Tempo</h2>
+                        <div>
                             <div>
-                                <p>insira a quantidade de inputs</p>
-                                <input type="number" class="cont">
+                                <p>CPI:</p>
+                                <input type="number" id="exibir">
+                                <p>iC:</p>
+                                <input type="number">
+                                <p>Clock(ghz):</p>
+                                <input type="number">
                                 <p>Resultado</p>
                                 <input type="number" id="exibir" disabled>
                             </div>
@@ -86,34 +105,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="calculo">
-                        <div class="aling">
-                            <h2>calculadora Tempo</h2>
-                            <div>
-                                <div>
-                                    <p>CPI:</p>
-                                    <input type="number" id="exibir">
-                                    <p>iC:</p>
-                                    <input type="number">
-                                    <p>Clock(ghz):</p>
-                                    <input type="number">
-                                    <p>Resultado</p>
-                                    <input type="number" id="exibir" disabled>
-                                </div>
-                                <div class="bts">
-                                    <button class="bt1" id="bt">Enviar</button>
-                                    <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-
-                </div>
             </div>
         </section>
+    </div>
+    <div class="versao">
+        <i class="fas fa-caret-left" id="bt"></i>
     </div>
 </body>
 

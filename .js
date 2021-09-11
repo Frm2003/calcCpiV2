@@ -1,21 +1,17 @@
 function load(cpi, res) {
     res = document.getElementsByClassName("result")[0]
-
     menu(document.getElementById("cb"))
     radio = document.querySelectorAll('[name="r"]')
     for (let a = 0; a < radio.length; a++) {
         radio[a].hidden = true
     }
-
     btCalc = document.querySelectorAll("#bt")
     mainInputs = document.querySelectorAll(".cont")
     exibir = document.querySelectorAll("#exibir")
-
     for (let b = 0; b < exibir.length; b++) {
         exibir[0].value = cpi
         exibir[1].value = cpi
     }
-
     for (let a = 0; a < btCalc.length; a++) {
         btCalc[0].onclick = function () { // fecha a aba de calculo 
             res.style.marginLeft = "-100%"
@@ -25,6 +21,7 @@ function load(cpi, res) {
                 mainInputs[0].style.borderColor = "red"
             } else {
                 res.style.marginLeft = "-100%"
+                btCalc[4].style.opacity = "0"
                 mainInputs[0].style.borderColor = "rgba(196,31,20,0.5)"
                 calcCpi(mainInputs[0])
             }
@@ -34,9 +31,13 @@ function load(cpi, res) {
                 mainInputs[1].style.borderColor = "red"
             } else {
                 res.style.marginLeft = "0%"
+                btCalc[4].style.opacity = "1"
                 mainInputs[1].style.borderColor = "rgba(196,31,20,0.5)"
                 criarInputs(mainInputs[1])
             }
+        }
+        btCalc[4].onclick = function () {
+            res.style.marginLeft = "0%"
         }
     }
 }
@@ -58,10 +59,8 @@ function criarInputs(x, instA, instB) {
     for (let a = 0; a < x.value; a++) {
         instA = document.body.appendChild(document.createElement("input"))
         instB = document.body.appendChild(document.createElement("input"))
-
         instA.setAttribute("class", "a field")
         instB.setAttribute("class", "b field")
-
         document.getElementsByClassName("ia")[0].insertAdjacentElement("beforeend", instA)
         document.getElementsByClassName("ib")[0].insertAdjacentElement("beforeend", instB)
     }
