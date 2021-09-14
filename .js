@@ -21,7 +21,7 @@ function load(cpi, res) {
                 mainInputs[0].style.borderColor = "red"
             } else {
                 res.style.marginLeft = "-100%"
-                btCalc[4].style.opacity = "0"
+                btCalc[3].style.opacity = "0"
                 mainInputs[0].style.borderColor = "rgba(196,31,20,0.5)"
                 calcCpi(mainInputs[0])
             }
@@ -31,12 +31,12 @@ function load(cpi, res) {
                 mainInputs[1].style.borderColor = "red"
             } else {
                 res.style.marginLeft = "0%"
-                btCalc[4].style.opacity = "1"
+                btCalc[3].style.opacity = "1"
                 mainInputs[1].style.borderColor = "rgba(196,31,20,0.5)"
                 criarInputs(mainInputs[1])
             }
         }
-        btCalc[4].onclick = function () {
+        btCalc[3].onclick = function () {
             res.style.marginLeft = "0%"
         }
     }
