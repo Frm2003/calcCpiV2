@@ -1,0 +1,38 @@
+*{
+    color:rgba(0,0,0,1)
+}
+body{
+    background: rgba(255,255,255,1);
+}
+nav{
+    background: rgba(220,220,220,1);
+}
+header{
+    border-bottom: 1px solid rgba(196,31,20,0.5);
+    background: rgba(220,220,220,1);
+}
+h2{
+    color:rgba(0,0,0,1)
+}
+input{
+    border: 1px solid rgba(196,31,20,0.5);
+    background: none;
+}
+.navigation .bar{
+    color:rgba(0,0,0,1)
+}
+.calculo{
+    border: 1px solid rgba(196,31,20,1);
+	border-radius: 5px;
+}
+.result .alingRes{
+    border: 1px solid rgba(196,31,20,0.5);
+    border-radius: 5px;
+    background: rgba(33,32,32,1);
+}
+.bts button{
+    border: none;
+    border-radius: 5px;
+    background: rgba(196,31,20,0.5);
+    color: rgba(255,255,255,1);
+}

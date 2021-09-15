@@ -1,6 +1,7 @@
 function load(cpi, res) {
     res = document.getElementsByClassName("result")[0]
     menu(document.getElementById("cb"), document.querySelectorAll("#btMenu"))
+    tema(document.getElementById("altTheme"))
     radio = document.querySelectorAll('[name="r"]')
     for (let a = 0; a < radio.length; a++) {
         radio[a].hidden = true
@@ -41,17 +42,26 @@ function load(cpi, res) {
         }
     }
 }
-function menu(cb, btMenu) {
+function menu(cb) {
     cb.hidden = true
     cb.onchange = function (nav, header) {
         nav = document.getElementsByTagName("nav")[0]
-        header = document.getElementsByTagName("header")[0]
         if (cb.checked) {
             nav.style.marginLeft = "0%"
-            header.style.borderBottom = "1px solid rgba(255,255,255,0.5)"
         } else {
             nav.style.marginLeft = "-100%"
-            header.style.borderBottom = "1px solid rgba(196,31,20,0.5)"
+        }
+    }
+}
+function tema(checkbox) {
+    checkbox.hidden = true
+    checkbox.onchange = function () {
+        if (checkbox.checked) {
+            document.getElementById("attheme").setAttribute("class", "fas fa-lightbulb")
+            document.getElementsByTagName("link")[4].setAttribute("href", "css/themeDark.css")
+        } else {
+            document.getElementById("attheme").setAttribute("class", "far fa-lightbulb")
+            document.getElementsByTagName("link")[4].setAttribute("href", "css/themeLight.css")
         }
     }
 }

@@ -12,6 +12,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/themeLight.css">
     <script src=".js"></script>
     <title>Calculadora Cpi</title>
 </head>
@@ -27,14 +28,25 @@
     </header>
     <nav>
         <ul>
-            <a href="#" class="top">
-                <i class="fas fa-calculator"></i>
-                <li id="btMenu">Calculos</li>
-            </a>
-            <a href="#" class="bottom">
-                <i class="fas fa-phone-square"></i>
-                <li id="btMenu">Contatos</li>
-            </a>
+            <li>
+                <a href="#">
+                    <i class="fas fa-calculator"></i>
+                    <p>Calculos</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-phone-square"></i>
+                    <p>Contatos</p>
+                </a>
+            </li>
+            <li>
+                <label for="altTheme">
+                    <i id="attheme" class="far fa-lightbulb"></i>
+                    <p>Alterar Tema</p>
+                    <input type="checkbox" id="altTheme">
+                </label>
+            </li>
         </ul>
     </nav>
     <div class="result">
@@ -79,8 +91,7 @@
                             <input type="number" id="exibir" disabled>
                         </div>
                         <div class="bts">
-                            <button class="bt1" id="bt">Enviar</button>
-                            <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
+                            <button id="bt">Enviar</button>
                         </div>
                     </div>
                     <div class="seta">
@@ -102,8 +113,7 @@
                                 <input type="number" id="exibir" disabled>
                             </div>
                             <div class="bts">
-                                <button class="bt1" id="bt">Enviar</button>
-                                <button class="bt2" id="btCopy"><i class="far fa-copy"></i></button>
+                                <button id="bt">Enviar</button>
                             </div>
                         </div>
                     </div>

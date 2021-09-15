@@ -6,17 +6,14 @@
 }
 h2{
     padding: 0.5em;
-    color: rgba(255,255,255,1);
     text-align: center;
 }
 input{
 	width: 100%;
 	padding: 0.5em;
     margin: 0.25em 0em 0.25em 0em;
-	border: 1px solid rgba(196,31,20,0.5);
+	border: 1px solid;
 	border-radius: 5px;
-	background: none;
-	color: rgba(255,255,255,0.5);
 }
 /*navegação*/
 .navigationAling{
@@ -33,7 +30,6 @@ input{
 }
 .navigation .bar{
     padding: 0.5em;
-    color: rgba(255,255,255,1);
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -64,8 +60,6 @@ input{
 	width: 80%;
 	margin: auto;
 	padding: 0.5em;
-	border: 1px solid rgba(196,31,20,0.5);
-	border-radius: 5px;
 	text-align: center;
 }
 .calculo img{
@@ -89,9 +83,6 @@ input{
     width: 95%;
     height: 95%;
     padding: 0.5em;
-    border: 1px solid rgba(196,31,20,0.5);
-    border-radius: 5px;
-    background: rgba(33,32,32,1);
 }
 .result .alingRes .titulo{
     padding: 0.5em;
@@ -124,19 +115,7 @@ input{
 	width: 100%;
     padding: 0.5em;
 	margin: 0.5em 0em 0.5em 0em;
-    border: none;
-    border-radius: 5px;
-    background: rgba(196,31,20,0.5);
-    color: rgba(255,255,255,1);
 	cursor: pointer;
-}
-.bts .bt1{
-	width: 85%;
-	margin-right: 0.5em;
-}
-.bts .bt2{
-	width: 15%;
-	background-color: rgba(20,96,196,1);
 }
 /*seta*/
 .seta{
