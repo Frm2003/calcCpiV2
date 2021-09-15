@@ -94,6 +94,11 @@ header .iconeFechar i{
         height: 70px;
     }
 }
+@media screen and (min-width: 1200px){
+    nav{
+        width: 25%;
+    }
+}
 @media screen and (min-width: 1500px){
     nav{
         width: 18%;

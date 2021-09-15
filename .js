@@ -1,6 +1,6 @@
 function load(cpi, res) {
     res = document.getElementsByClassName("result")[0]
-    menu(document.getElementById("cb"))
+    menu(document.getElementById("cb"), document.querySelectorAll("#btMenu"))
     radio = document.querySelectorAll('[name="r"]')
     for (let a = 0; a < radio.length; a++) {
         radio[a].hidden = true
@@ -41,7 +41,7 @@ function load(cpi, res) {
         }
     }
 }
-function menu(cb) {
+function menu(cb, btMenu) {
     cb.hidden = true
     cb.onchange = function (nav, header) {
         nav = document.getElementsByTagName("nav")[0]
